@@ -1,22 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    int bolunen, bolen, bolum, kalan;
+    int toplam = 0;
 
-    // Kullanıcıdan tam sayıları al
-    printf("Bolunen sayiyi girin: ");
-    scanf("%d", &bolunen);
+    // 1 ile 50 arasındaki tek sayıları topla
+    for (int i = 1; i <= 50; i += 2) {
+        toplam += i;
+    }
 
-    printf("Bolen sayiyi girin: ");
-    scanf("%d", &bolen);
-
-    // Bölme işlemi
-    bolum = bolunen / bolen;
-    kalan = bolunen % bolen;
-
-    // Sonuçları ekrana yazdır
-    printf("Bolum: %d\n", bolum);
-    printf("Kalan: %d\n", kalan);
+    // Toplamı ekrana yazdır
+    printf("1 ile 50 arasindaki tek sayilarin toplami: %d\n", toplam);
 
     return 0;
 }
